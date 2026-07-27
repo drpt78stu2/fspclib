@@ -1,0 +1,29 @@
+██████████████████  ████████    pepe@pepe-82vg
+██████████████████  ████████    --------------
+██████████████████  ████████    OS: Manjaro Linux x86_64
+██████████████████  ████████    Host: 82VG (IdeaPad 1 15AMN7)
+████████            ████████    Kernel: Linux 6.18.39-1-MANJARO
+████████  ████████  ████████    Uptime: 1 hour, 41 mins
+████████  ████████  ████████    Packages: 1304 (pacman)[stable]
+████████  ████████  ████████    Shell: zsh 5.9.2
+████████  ████████  ████████    Display (LEN9052): 1920x1080 in 16", 60 Hz [Built-in]
+████████  ████████  ████████    DE: KDE Plasma 6.7.3
+████████  ████████  ████████    WM: KWin (Wayland)
+████████  ████████  ████████    WM Theme: Breeze
+████████  ████████  ████████    Theme: Breeze (BreathLight) [Qt], Breeze [GTK2/3]
+████████  ████████  ████████    Icons: breeze [Qt], breeze [GTK2/3/4]
+                                Font: Noto Sans (10pt) [Qt], Noto Sans (10pt) [GTK2/3/4]
+                                Cursor: breeze (24px)
+                                Terminal: konsole 26.4.3
+                                Terminal Font: Hack Nerd Font Mono (11pt)
+                                CPU: AMD Ryzen 5 7520U (8) @ 4.39 GHz
+                                GPU: AMD Radeon 610M [Integrated]
+                                Memory: 1.36 GiB / 5.52 GiB (25%)
+                                Swap: 0 B / 4.00 GiB (0%)
+                                Disk (/): 21.00 GiB / 116.99 GiB (18%) - btrfs
+                                Local IP (wlp2s0): 172.28.72.92/12
+                                Battery (L21L3PF0): 100% [AC Connected]
+                                Locale: en_US.UTF-8
+                                
+                                [40m   [41m   [42m   [43m   [44m   [45m   [46m   [47m   [m
+                                [100m   [101m   [102m   [103m   [104m   [105m   [106m   [107m   [m

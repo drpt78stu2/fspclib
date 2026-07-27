@@ -19,8 +19,7 @@ rm statsort_bench
 g++ -O3 ./benchmarks/statsort_bench.cpp -I./code -o statsort_bench
 
 echo "------ benchmark -----"
-rm ./results/results.txt
-neofetch >> ./results/results.txt
+fastfetch >> ./results/results_pc.txt
 
 for i in {1..30}
 do
