@@ -156,10 +156,6 @@ namespace boost {
                 }
 
                 // Pass 4: recurse per bucket
-                // https://takeuforward.org/data-structure/boundary-traversal-of-a-binary-tree
-                // Nigel Stewart - I really liked his suggestion for implementation
-                // https://lists.boost.org/archives/list/boost@lists.boost.org/message/ILQDIB4MLTB5FWAI7UALQEBMZRLVFI7M/
-
                 for (std::size_t b = 0; b < m; ++b) {
                     const std::size_t bstart = off[b];
                     const std::size_t bsize  = cnt[b];
@@ -170,7 +166,8 @@ namespace boost {
 					}
                     else
                     {
-							auto [bmin, bmax] = std::minmax_element(scratch + bstart, scratch + bstart + bsize);
+                    		const double bmin = min + static_cast<double>(b)     * (max - min) / static_cast<double>(m);
+                    		const double bmax = min + static_cast<double>(b + 1) * (max - min) / static_cast<double>(m);
 							statsort_impl_proj(scratch + bstart, bsize, bmin, bmax, data + bstart, proj);
 					}
                 }
