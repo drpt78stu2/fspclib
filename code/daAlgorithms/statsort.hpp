@@ -1,14 +1,14 @@
 #ifndef BOOST_ALGORITHM_STATSORT_HPP
 #define BOOST_ALGORITHM_STATSORT_HPP
 
-#include <algorithm>    // std::sort, std::min_element, std::max_element, std::copy
-#include <cmath>        // std::sqrt
-#include <cstddef>      // std::size_t
-#include <functional>   // std::invoke
-#include <iterator>     // std::iterator_traits, std::distance
-#include <limits>       // std::numeric_limits
-#include <type_traits>  // std::is_arithmetic_v, std::enable_if_t, std::invoke_result_t
-#include <vector>       // std::vector
+#include <algorithm>
+#include <cmath>
+#include <cstddef>
+#include <functional>
+#include <iterator>
+#include <limits>
+#include <type_traits>
+#include <vector>
 
 namespace boost {
     namespace algorithm {

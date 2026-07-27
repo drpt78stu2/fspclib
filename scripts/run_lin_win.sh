@@ -3,17 +3,28 @@
 # just download and no need for admin account
 
 export PATH="/ucrt64/bin/:$PATH"
-#pacman -Syu
-pacman -S --needed mingw-w64-ucrt-x86_64-gcc
-pacman -S --needed mingw-w64-ucrt-x86_64-boost
-pacman -S --needed neofetch
+#sudo pacman -Syu
 
-rm statsort_bench.exe
+#windows
+sudo pacman -S --needed mingw-w64-ucrt-x86_64-gcc
+sudo pacman -S --needed mingw-w64-ucrt-x86_64-boost
 
-g++ -O3 ./benchmarks/statsort_bench.cpp -I./code -o statsort_bench.exe
+#linux
+sudo pacman -Syu --needed gcc
+sudo pacman -S --needed boost
+sudo pacman -S --needed neofetch
+
+rm statsort_bench
+
+g++ -O3 ./benchmarks/statsort_bench.cpp -I./code -o statsort_bench
 
 echo "------ benchmark -----"
+rm ./results/results.txt
 neofetch >> ./results/results.txt
-./statsort_bench.exe >> ./results/results.txt
 
-rm statsort_bench.exe
+for i in {1..30}
+do
+    ./statsort_bench >> ./results/results.txt
+done
+
+rm statsort_bench
