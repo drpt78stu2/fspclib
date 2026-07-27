@@ -75,7 +75,7 @@ void benchmark()
                   << ((t_pdqsort == t_min) ? "**" : "") << std::setw(3) << t_pdqsort << ((t_pdqsort == t_min) ? "**" : "") << "  |\n";
     };
 
-    for (std::size_t n : {10000UL, 100000UL, 1000000UL, 10000000UL, 100000000UL, 200000000UL, 300000000UL}
+    for (std::size_t n : {10000UL, 100000UL, 1000000UL, 10000000UL, 25000000UL, 50000000UL, 75000000UL, 100000000UL }
     ) {
         std::mt19937 rng(427);
         std::string ns = std::to_string(n);
