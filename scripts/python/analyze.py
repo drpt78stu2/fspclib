@@ -76,3 +76,43 @@ for dist in data:
     plt.title('Distribution ' + str(dist))
     plt.legend()
     plt.show()
+
+def o_n(n):
+    return n
+def o_nlogn(n):
+    return n * np.log(n)
+def o_nloglogn(n):
+    return n * np.log(np.log(n))
+
+o_functions = [o_n, o_nlogn, o_nloglogn]
+
+for dist in data:
+    data_dist = data[dist]
+    print(dist)
+
+    sizes = []
+    num_exp = 9999
+    for size in data_dist:
+        sizes.append(size)
+        num_exp = min(num_exp, len(data_dist[size]))
+
+    print(sizes)
+    print(num_exp)
+
+    for i in range(len(algs)):
+        plt.figure(figsize=(8, 5))
+        for o_fun in o_functions:
+            v = []
+            for exp in range(num_exp):
+                for size1 in data_dist:
+                    for size2 in data_dist:
+                        if size1 >= 1000000 and size1 < size2:
+                            tmp = np.abs((o_fun(size1))/(o_fun(size2)) - data_dist[size1][exp][i]/data_dist[size2][exp][i])
+                            if tmp>0.1:
+                                tmp = 0.1
+                            v.append(tmp)
+
+            plt.hist(v, bins=50, alpha=0.25, label=str(o_fun.__name__))
+        plt.legend()
+        plt.title('Distribution ' + str(dist) + ' alg ' + algs[i])
+        plt.show()
