@@ -6,8 +6,9 @@ export PATH="/ucrt64/bin/:$PATH"
 #sudo pacman -Syu
 
 #windows
-sudo pacman -S --needed mingw-w64-ucrt-x86_64-gcc
-sudo pacman -S --needed mingw-w64-ucrt-x86_64-boost
+pacman -S --needed mingw-w64-ucrt-x86_64-gcc
+pacman -S --needed mingw-w64-ucrt-x86_64-boost
+pacman -S --needed neofetch
 
 #linux
 sudo pacman -Syu --needed gcc
@@ -20,6 +21,7 @@ g++ -O3 ./benchmarks/statsort_bench.cpp -I./code -o statsort_bench
 
 echo "------ benchmark -----"
 fastfetch >> ./results/results_pc.txt
+neofetch >> ./results/results_pc.txt
 
 for i in {1..30}
 do
