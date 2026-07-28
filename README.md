@@ -3,7 +3,7 @@ Fast and Simple Pacific C++ Library
 
 Currently, only sorting algorithm implementation. More in future.
 
-One of the experiments on AMD + Linux:
+One of the experiments on AMD + Linux Manjaro:
 | Distribution | N | std::sort  | statsort| spreadsort| pdqsort |
 |---|---|---|---|---|---|
 | Uniform|   50000000 | 4755.39  |**1433.32**  |1485.87  |1909.55  |
