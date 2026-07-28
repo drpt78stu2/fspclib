@@ -166,18 +166,18 @@ namespace boost {
 					}
                     else
                     {
-                        static constexpr std::size_t THRESHOLD2 = 16 * 16;
+                        /*static constexpr std::size_t THRESHOLD2 = 16 * 2;
                         if(bsize < THRESHOLD2)
                         {
                             auto [bmin, bmax] = std::minmax_element(scratch + bstart, scratch + bstart + bsize);
                             statsort_impl_proj(scratch + bstart, bsize, bmin, bmax, data + bstart, proj);
                         }
                         else
-                        {
+                        {*/
                     		const double bmin = min + static_cast<double>(b)     * (max - min) / static_cast<double>(m);
                     		const double bmax = min + static_cast<double>(b + 1) * (max - min) / static_cast<double>(m);
 							statsort_impl_proj(scratch + bstart, bsize, bmin, bmax, data + bstart, proj);
-                        }
+                        //}
 					}
                 }
 

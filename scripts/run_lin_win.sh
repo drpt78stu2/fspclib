@@ -16,6 +16,7 @@ sudo pacman -S --needed boost
 sudo pacman -S --needed neofetch
 
 rm statsort_bench
+rm ./results/*.txt
 
 g++ -O3 ./benchmarks/statsort_bench.cpp -I./code -o statsort_bench
 
