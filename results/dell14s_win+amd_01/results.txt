@@ -1,0 +1,14 @@
+=== Basic usage ===
+
+Sorted prices: 0.5 1.49 3.75 5 8.2 9.99 
+Sorted scores: 17 42 55 63 71 88 95 
+Sorted temps:  35.9 36.6 37 38.1 39.2 
+
+=== Performance comparison ===
+
+| Distribution | N | std::sort  | statsort| spreadsort| pdqsort |
+|---|---|---|---|---|---|
+| Uniform|   100000000 | 11510.73  |**2165.85**  |2967.13  |2575.45  |
+| Gaussian|  100000000 | 8966.48  |2884.82  |3247.37  |**2696.83**  |
+| Exponential|100000000 | 9377.80  |**2416.47**  |2815.08  |3003.39  |
+|---|---|---|---|---|---|
