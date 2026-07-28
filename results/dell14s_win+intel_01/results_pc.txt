@@ -1,0 +1,34 @@
+[?25l[?7l[0m[31m[1m        ,.=:!!t3Z3z.,
+       :tt:::tt333EE3
+[0m[31m[1m       Et:::ztt33EEEL[0m[32m[1m @Ee.,      ..,
+[0m[31m[1m      ;tt:::tt333EE7[0m[32m[1m ;EEEEEEttttt33#
+[0m[31m[1m     :Et:::zt333EEQ.[0m[32m[1m $EEEEEttttt33QL
+[0m[31m[1m     it::::tt333EEF[0m[32m[1m @EEEEEEttttt33F
+[0m[31m[1m    ;3=*^```"*4EEV[0m[32m[1m :EEEEEEttttt33@.
+[0m[34m[1m    ,.=::::!t=., [0m[31m[1m`[0m[32m[1m @EEEEEEtttz33QF
+[0m[34m[1m   ;::::::::zt33)[0m[32m[1m   "4EEEtttji3P*
+[0m[34m[1m  :t::::::::tt33.[0m[33m[1m:Z3z..[0m[32m[1m  ``[0m[33m[1m ,..g.
+[0m[34m[1m  i::::::::zt33F[0m[33m[1m AEEEtttt::::ztF
+[0m[34m[1m ;:::::::::t33V[0m[33m[1m ;EEEttttt::::t3
+[0m[34m[1m E::::::::zt33L[0m[33m[1m @EEEtttt::::z3F
+[0m[34m[1m{3=*^```"*4E3)[0m[33m[1m ;EEEtttt:::::tZ`
+[0m[34m[1m             `[0m[33m[1m :EEEEtttt::::z7
+                 "VEzjt:;;z>*`[0m
+[16A[9999999D[39C[0m[1m[31m[1mDarrin DeYoung[0m@[31m[1mDESKTOP-4QT6JD8[0m 
+[39C[0m------------------------------[0m 
+[39C[0m[32m[1mOS[0m[0m:[0m Windows (Unknown) x86_64[0m 
+[39C[0m[32m[1mUptime[0m[0m:[0m 3 days, 18 hours, 2 mins[0m 
+[39C[0m[32m[1mPackages[0m[0m:[0m 113 (pacman)[0m 
+[39C[0m[32m[1mShell[0m[0m:[0m bash 5.3.15[0m 
+[39C[0m[32m[1mDE[0m[0m:[0m Aero[0m 
+[39C[0m[32m[1mWM[0m[0m:[0m Explorer[0m 
+[39C[0m[32m[1mWM Theme[0m[0m:[0m aero[0m 
+[39C[0m[32m[1mTerminal[0m[0m:[0m mintty[0m 
+[39C[0m[32m[1mCPU[0m[0m:[0m Intel Ultra 9 386H (16) @ 3.810GHz[0m 
+[39C[0m[32m[1mMemory[0m[0m:[0m 19127MiB / 32328MiB[0m 
+
+[39C[30m[40m   [31m[41m   [32m[42m   [33m[43m   [34m[44m   [35m[45m   [36m[46m   [37m[47m   [m
+[39C[38;5;8m[48;5;8m   [38;5;9m[48;5;9m   [38;5;10m[48;5;10m   [38;5;11m[48;5;11m   [38;5;12m[48;5;12m   [38;5;13m[48;5;13m   [38;5;14m[48;5;14m   [38;5;15m[48;5;15m   [m
+
+
+[?25h[?7h
