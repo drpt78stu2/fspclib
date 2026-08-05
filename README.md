@@ -3,6 +3,13 @@ Fast and Simple Pacific C++ Library
 
 Currently, only sorting algorithm implementation. More in future.
 
+See [Why would you sort when you know where things approximately belong?](https://www.authorea.com/doi/full/10.22541/au.173145007.70152282/v3)
+
+DOI: 10.22541/au.173145007.70152282/v3
+
+Contributors: Peter Taraba
+
+
 One of the experiments on AMD + Linux Manjaro:
 | Distribution | N | std::sort  | statsort| spreadsort| pdqsort |
 |---|---|---|---|---|---|
