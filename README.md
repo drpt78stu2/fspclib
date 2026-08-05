@@ -7,9 +7,6 @@ See [Why would you sort when you know where things approximately belong?](https:
 
 DOI: 10.22541/au.173145007.70152282/v3
 
-Contributors: Peter Taraba
-
-
 One of the experiments on AMD + Linux Manjaro:
 | Distribution | N | std::sort  | statsort| spreadsort| pdqsort |
 |---|---|---|---|---|---|
