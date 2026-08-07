@@ -75,9 +75,9 @@ void benchmark()
                   << ((t_pdqsort == t_min) ? "**" : "") << std::setw(3) << t_pdqsort << ((t_pdqsort == t_min) ? "**" : "") << "  |\n";
     };
 
+    // requires 16 GB or more of RAM memory
     for (std::size_t n :
-        {10000UL, 100000UL, 1000000UL, 10000000UL, 50000000UL, 100000000UL,
-         125000000UL,  150000000UL}
+        {1000000UL, 5000000UL, 10000000UL, 50000000UL, 100000000UL, 250000000UL, 500000000UL}
     ) {
         std::mt19937 rng(427);
         std::string ns = std::to_string(n);
