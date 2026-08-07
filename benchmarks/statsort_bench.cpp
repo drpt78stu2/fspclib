@@ -14,19 +14,19 @@ void basic_examples()
     std::cout << "=== Basic usage ===\n\n";
 
     std::vector<double> prices = {9.99, 1.49, 5.00, 3.75, 8.20, 0.50};
-    boost::algorithm::statsort(prices);
+    fspclib::algorithm::statsort(prices);
     std::cout << "Sorted prices: ";
     for (double p : prices) std::cout << p << " ";
     std::cout << "\n";
 
     std::vector<int> scores = {88, 42, 95, 17, 63, 71, 55};
-    boost::algorithm::statsort(scores);
+    fspclib::algorithm::statsort(scores);
     std::cout << "Sorted scores: ";
     for (int s : scores) std::cout << s << " ";
     std::cout << "\n";
 
     std::vector<float> temps = {36.6f, 38.1f, 37.0f, 35.9f, 39.2f};
-    boost::algorithm::statsort(temps.begin(), temps.end());
+    fspclib::algorithm::statsort(temps.begin(), temps.end());
     std::cout << "Sorted temps:  ";
     for (float t : temps) std::cout << t << " ";
     std::cout << "\n\n";
@@ -61,7 +61,7 @@ void benchmark()
     auto print_row = [&](const std::string& label,
                          const std::vector<double>& base) {
         double t_std             = time_ms([](auto& v){ std::sort(v.begin(), v.end()); }, base);
-        double t_stat            = time_ms([](auto& v){ boost::algorithm::statsort(v); }, base);
+        double t_stat            = time_ms([](auto& v){ fspclib::algorithm::statsort(v); }, base);
         double t_spreadsort      = time_ms([](auto& v){ boost::sort::spreadsort::spreadsort(v.begin(), v.end()); }, base);
         double t_pdqsort         = time_ms([](auto& v){ boost::sort::pdqsort(v.begin(), v.end()); }, base);
 

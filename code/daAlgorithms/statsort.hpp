@@ -1,5 +1,5 @@
-#ifndef BOOST_ALGORITHM_STATSORT_HPP
-#define BOOST_ALGORITHM_STATSORT_HPP
+#ifndef fspclib_ALGORITHM_STATSORT_HPP
+#define fspclib_ALGORITHM_STATSORT_HPP
 
 #include <algorithm>
 #include <cmath>
@@ -10,7 +10,7 @@
 #include <type_traits>
 #include <vector>
 
-namespace boost {
+namespace fspclib {
     namespace algorithm {
 
         namespace detail {
@@ -284,6 +284,6 @@ namespace boost {
 
 
     } // namespace algorithm
-} // namespace boost
+} // namespace fspclib
 
-#endif // BOOST_ALGORITHM_STATSORT_HPP
+#endif // fspclib_ALGORITHM_STATSORT_HPP
