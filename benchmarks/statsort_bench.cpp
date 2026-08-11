@@ -55,7 +55,7 @@ void benchmark()
               << std::setw(12) << "| statsort"
               << std::setw(12) << "| spreadsort"
               << std::setw(12) << "| pdqsort |\n"
-              <<  "|---|---|---|---|---|---|\n";
+              <<  "|---|---|---|---|---|\n";
 
     auto print_row = [&](const std::string& label,
                          const std::vector<double>& base) {
@@ -67,7 +67,6 @@ void benchmark()
 
         std::cout << std::left  << std::setw(2) << "| " << label << " | "
                   << std::right << std::fixed << std::setprecision(2)
-                  //<< ((t_std == t_min) ? "**" : "") << std::setw(3) << t_std << ((t_std == t_min) ? "**" : "") << "  |"
                   << ((t_stat == t_min) ? "**" : "") << std::setw(3) << t_stat << ((t_stat == t_min) ? "**" : "") << "  |"
                   << ((t_spreadsort == t_min) ? "**" : "") << std::setw(3) << t_spreadsort << ((t_spreadsort == t_min) ? "**" : "") << "  |"
                   << ((t_pdqsort == t_min) ? "**" : "") << std::setw(3) << t_pdqsort << ((t_pdqsort == t_min) ? "**" : "") << "  |\n";
@@ -75,7 +74,7 @@ void benchmark()
 
     // requires 16 GB or more of RAM memory
     for (std::size_t n :
-        {1000000, 5000000, 10000000, 50000000, 100000000, 250000000, 500000000, 750000000}
+        {1000000UL, 5000000UL, 10000000UL, 50000000UL, 100000000UL, 250000000UL, 500000000UL, 750000000UL}
     ) {
         std::mt19937 rng(427);
         std::string ns = std::to_string(n);
