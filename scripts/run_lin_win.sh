@@ -26,7 +26,7 @@ neofetch >> ./results/results_pc.txt
 
 for i in {1..30}
 do
-    ./statsort_bench your_command 2>&1 | tee ./results/results.txt
+    ./statsort_bench your_command 2>&1 | tee -a ./results/results.txt
 done
 
 rm statsort_bench
