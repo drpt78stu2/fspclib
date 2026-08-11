@@ -39,12 +39,14 @@ template <typename SortFn>
 double time_ms(SortFn fn, const std::vector<double>& base)
 {
     auto v = base;
+
+    using namespace std::chrono_literals;
+    std::this_thread::sleep_for(100ms);
+
     auto t0 = Clock::now();
     fn(v);
     double total = Ms(Clock::now() - t0).count();
 
-    using namespace std::chrono_literals;
-    std::this_thread::sleep_for(100ms);
     return total;
 }
 
