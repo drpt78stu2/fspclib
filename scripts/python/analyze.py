@@ -49,6 +49,7 @@ def main():
 
     colors = ['r','g','b','c']
 
+    comp_algs = {}
     for dist in data:
         data_dist = data[dist]
         print(dist)
@@ -71,10 +72,24 @@ def main():
             y_up.append(mean_vals + std_vals)
             y_low.append(mean_vals - std_vals)
 
-        x = np.log(np.array(x))
-        y = np.log(np.array(y))
-        y_low = np.log(np.array(y_low))
-        y_up = np.log(np.array(y_up))
+        x = np.array(x)
+        y = np.array(y)
+        y_low = np.array(y_low)
+        y_up = np.array(y_up)
+
+        for i in range(y.shape[1]):
+            for j in range(i+1, y.shape[1]):
+                plt.plot(np.log(x),100.0*(y[:,i]-y[:,j])/np.minimum(y[:,i],y[:,j]), marker='.', label=algs[i] + ' vs ' + algs[j])
+        plt.plot(np.log(x), x*0.0, linestyle='dashed', label='Same speed')
+        plt.xlabel('log N')
+        plt.ylabel('% dif')
+        plt.legend()
+        plt.show()
+
+        x = np.log(x)
+        y = np.log(y)
+        y_low = np.log(y_low)
+        y_up = np.log(y_up)
 
         plt.figure(figsize=(8, 5))
         for i in range(y.shape[1]):
