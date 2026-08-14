@@ -1,0 +1,22 @@
+██████████████████  ████████    root@manjaro
+██████████████████  ████████    ------------
+██████████████████  ████████    OS: Manjaro Linux x86_64
+██████████████████  ████████    Host: 82VG (IdeaPad 1 15AMN7)
+████████            ████████    Kernel: Linux 7.1.7-MANJARO-dirty
+████████  ████████  ████████    Uptime: 2 mins
+████████  ████████  ████████    Packages: 201 (pacman)[stable]
+████████  ████████  ████████    Shell: bash 5.3.15
+████████  ████████  ████████    Display (Unknown-1): 1920x1080 in 23", 60 Hz
+████████  ████████  ████████    Terminal: /dev/tty1
+████████  ████████  ████████    Terminal Font: VGA default kernel font 8x16x256
+████████  ████████  ████████    CPU: AMD Ryzen 5 7520U (8) @ 4.39 GHz
+████████  ████████  ████████    GPU: AMD Radeon 610M
+████████  ████████  ████████    Memory: 511.04 MiB / 5.52 GiB (9%)
+                                Swap: Disabled
+                                Disk (/): 8.46 MiB / 2.76 GiB (0%) - overlay
+                                Disk (/mnt/usbX): 124.00 KiB / 28.27 GiB (0%) - ext4 [External]
+                                Battery (L21L3PF0): 100% [AC Connected]
+                                Locale: C.UTF-8
+                                
+                                [40m   [41m   [42m   [43m   [44m   [45m   [46m   [47m   [m
+                                [5m[100m   [101m   [102m   [103m   [104m   [105m   [106m   [107m   [m
